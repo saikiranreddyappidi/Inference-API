@@ -51,7 +51,7 @@ Horizon is a web application that provides a chatbot interface and a large text 
 - **CUDA Downloads**: [CUDA Download Link](https://developer.nvidia.com/cuda-downloads)
 - **Django**: [Django Website](https://www.djangoproject.com)
 - **Testing UI**: [UI Testing Link](https://horizon.skydrige.tech)
-- **UI Repository**: [UI Testing Link](https://github.com/SpokenEagle/chat-UI)
+- **UI GitHub Repository**: [Chat-UI](https://github.com/SpokenEagle/chat-UI)
 
 ## Contributing
 We are actively developing and experimenting with various technologies and open-source LLMs. Contributions are welcome! If you are interested in contributing to the project, please fork the repository and submit a pull request with your proposed changes.
