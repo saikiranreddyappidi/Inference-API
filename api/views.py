@@ -181,7 +181,8 @@ async def index(request):
 
 async def test(request):
     text = await sync_to_async(summarizer.summarize)(summarizer.text)
-    return await sync_to_async(HttpResponse)(Preprocessor().formater(text))
+    processor=Preprocessor()
+    return await arender(request, 'summary.html', {'userInput': summarizer.text, 'summary': processor.formater(text)})
 
 
 async def arender(request, template, context=None):

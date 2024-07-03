@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24a912d5-d218-4e67-94a9-76466e0f5b9d" name="Changes" comment="Changed some UI and increased the context length">
+    <list default="true" id="24a912d5-d218-4e67-94a9-76466e0f5b9d" name="Changes" comment="changed the allowed hosts list to allow traffic to the host computer where the application is running">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/inference/summary.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/inference/summary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productionfiles/css/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/productionfiles/css/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/summary.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,8 @@
       <workItem from="1719225050849" duration="332000" />
       <workItem from="1719389140378" duration="473000" />
       <workItem from="1719561291462" duration="43000" />
-      <workItem from="1719661034586" duration="5308000" />
+      <workItem from="1719661034586" duration="5799000" />
+      <workItem from="1720001705627" duration="1460000" />
     </task>
     <task id="LOCAL-00002" summary="creating a chatbot">
       <option name="closed" value="true" />
@@ -226,45 +227,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719662338686</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changed the allowed hosts list to allow traffic to the host computer where the application is running">
+      <option name="closed" value="true" />
+      <created>1719669682095</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719669682095</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1cecb82a-78ce-4f99-93cf-f57604ed9529" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="1cecb82a-78ce-4f99-93cf-f57604ed9529">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/Users/saiki/PycharmProjects/InferenceAPI/templates/node_modules" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -283,6 +262,7 @@
     <MESSAGE value="added a new home page, prompts checked" />
     <MESSAGE value="docker file updated" />
     <MESSAGE value="Changed some UI and increased the context length" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed some UI and increased the context length" />
+    <MESSAGE value="changed the allowed hosts list to allow traffic to the host computer where the application is running" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the allowed hosts list to allow traffic to the host computer where the application is running" />
   </component>
 </project>

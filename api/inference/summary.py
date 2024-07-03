@@ -44,7 +44,7 @@ class Summarizer:
         # text = self.text
         prompt = (
                 self.USER_CHAT_TEMPLATE.format(
-                    prompt='Summarize the following scientific literature text: {}'.format(text)
+                    prompt='Summarize the following scientific literature text and give me a list of bullet points with key insights and the most important facts: {}'.format(text)
                 )
                 + '<start_of_turn>model\n'
         )
