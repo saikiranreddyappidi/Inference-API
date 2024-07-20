@@ -63,13 +63,13 @@ class Summarizer:
             chat += self.MODEL_CHAT_TEMPLATE.format(prompt=i.model)
 
         chat += self.USER_CHAT_TEMPLATE.format(prompt=query) + '<start_of_turn>model\n'
-        # print(chat)
+        print(chat)
         return chat
 
     def reply(self, query, previous_chat):
         prompt = self.prepare_template(query, previous_chat)
         return self.model.generate(
-            prompt,
+            self.USER_CHAT_TEMPLATE.format(prompt=prompt),
             device=self.device,
             output_len=550,
         )
