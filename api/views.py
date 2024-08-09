@@ -1,12 +1,14 @@
 import asyncio
-from datetime import datetime
 import socket
+from datetime import datetime
+from hashlib import sha256
 
+from asgiref.sync import sync_to_async, async_to_sync
 from django.contrib.auth import alogin, alogout, aauthenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.db.utils import IntegrityError
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.utils.datastructures import MultiValueDictKeyError
 from django.views.decorators.csrf import csrf_protect
@@ -14,8 +16,6 @@ from django.views.decorators.csrf import csrf_protect
 from .Preprocessor import Preprocessor
 from .inference.summary import Summarizer
 from .models import Chat_Session, Chat_Messages
-from hashlib import sha256
-from asgiref.sync import sync_to_async, async_to_sync
 
 hostname = socket.gethostname()
 print("Running '{}' server at: {}".format(hostname, socket.gethostbyname(hostname)))

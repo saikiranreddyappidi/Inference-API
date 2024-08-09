@@ -22,6 +22,7 @@ from gemma import config
 from gemma import model as gemma_model
 
 
+
 @contextlib.contextmanager
 def _set_default_tensor_type(dtype: torch.dtype):
     """Sets the default torch dtype to the given dtype."""
@@ -65,12 +66,12 @@ if __name__ == "__main__":
     parser.add_argument("--variant",
                         type=str,
                         default="2b",
-                        choices=["2b", "7b"])
+                        choices=["2b", "2b-v2", "7b", "9b", "27b"])
     parser.add_argument("--device",
                         type=str,
                         default="cpu",
                         choices=["cpu", "cuda"])
-    parser.add_argument("--output_len", type=int, default=100)
+    parser.add_argument("--output_len", type=int, default=10)
     parser.add_argument("--seed", type=int, default=12345)
     parser.add_argument("--quant", action='store_true')
     parser.add_argument("--prompt", type=str, default="The meaning of life is")

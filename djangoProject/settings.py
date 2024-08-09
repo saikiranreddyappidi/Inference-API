@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import socket
+
 hostname = socket.gethostname()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-lq1_1-8v_izpt@5m1-$b-7vte6ay&h0p_+whyy(a$k9!)3^3yn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'horizon.saikiranappidi.tech', socket.gethostbyname(hostname)]
+ALLOWED_HOSTS = ['*', '172.21.1.11', '127.0.0.1', 'localhost', 'horizon.saikiranappidi.tech',
+                 socket.gethostbyname(hostname)]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://horizon.saikiranappidi.tech'
@@ -79,7 +80,6 @@ TEMPLATES = [
 # WSGI_APPLICATION = 'djangoProject.wsgi.application'
 ASGI_APPLICATION = 'djangoProject.asgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -89,7 +89,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -109,7 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -120,7 +118,6 @@ TIME_ZONE = 'Asia/Kolkata'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -137,7 +134,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
 LOGGING = {
     'version': 1,
